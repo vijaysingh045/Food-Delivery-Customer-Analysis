@@ -1,0 +1,56 @@
+,Res_id,Res_name,contact,address,cuisine,rating
+0,1,Spice Garden,9100000001,"Hazratganj, Lucknow",Indian,5
+1,2,Pizza Palace,9100000002,"Gomti Nagar, Lucknow",Italian,4
+2,3,Burger Hub,9100000003,"Aliganj, Lucknow",Fast Food,4
+3,4,Royal Biryani,9100000004,"Aminabad, Lucknow",Mughlai,5
+4,5,Tandoori Treats,9100000005,"Indira Nagar, Lucknow",Punjabi,4
+5,6,Chinese Wok,9100000006,"Civil Lines, Kanpur",Chinese,4
+6,7,South Spice,9100000007,"Swaroop Nagar, Kanpur",South Indian,5
+7,8,Sweet Cravings,9100000008,"Mall Road, Kanpur",Dessert,4
+8,9,Food Junction,9100000009,"Sigra, Varanasi",Indian,3
+9,10,Cafe Delight,9100000010,"Lanka, Varanasi",Cafe,5
+10,11,The Pasta House,9100000011,"Tajganj, Agra",Italian,4
+11,12,Kebab Corner,9100000012,"Sadar, Agra",Mughlai,5
+12,13,Dosa Point,9100000013,"Sector 18, Noida",South Indian,4
+13,14,Rolls Express,9100000014,"Sector 62, Noida",Fast Food,3
+14,15,Noodle Nation,9100000015,"Sector 15, Noida",Chinese,4
+15,16,The Curry Bowl,9100000016,"Sector 50, Noida",Indian,5
+16,17,Flame Grill,9100000017,"Vaishali, Ghaziabad",BBQ,4
+17,18,Green Leaf,9100000018,"Indirapuram, Ghaziabad",Vegetarian,5
+18,19,Momo Street,9100000019,"Raj Nagar, Ghaziabad",Chinese,4
+19,20,Cafe Aroma,9100000020,"Civil Lines, Prayagraj",Cafe,4
+20,21,Biryani Blues,9100000021,"George Town, Prayagraj",Mughlai,5
+21,22,Punjabi Dhaba,9100000022,"Medical Road, Gorakhpur",Punjabi,4
+22,23,Chaat Bazaar,9100000023,"Golghar, Gorakhpur",Street Food,5
+23,24,Sushi Station,9100000024,"Gomti Nagar, Lucknow",Japanese,4
+24,25,Taco Town,9100000025,"Hazratganj, Lucknow",Mexican,4
+25,26,Waffle World,9100000026,"Alambagh, Lucknow",Dessert,5
+26,27,The Veg Kitchen,9100000027,"Kakadeo, Kanpur",Vegetarian,4
+27,28,Grill House,9100000028,"Kidwai Nagar, Kanpur",BBQ,4
+28,29,Wrap It Up,9100000029,"Bhelupur, Varanasi",Fast Food,3
+29,30,Thali Junction,9100000030,"Mahmoorganj, Varanasi",Indian,5
+30,31,Pav Bhaji Point,9100000031,"Kamla Nagar, Agra",Street Food,4
+31,32,Fried Chicken Co,9100000032,"Dayal Bagh, Agra",Fast Food,4
+32,33,Healthy Bites,9100000033,"Sector 137, Noida",Healthy Food,5
+33,34,The Dessert Bar,9100000034,"Sector 76, Noida",Dessert,4
+34,35,Royal Rasoi,9100000035,"Crossings Republik, Ghaziabad",Indian,5
+35,36,Chowmein Corner,9100000036,"Vijay Nagar, Ghaziabad",Chinese,3
+36,37,Idli House,9100000037,"Civil Lines, Jhansi",South Indian,4
+37,38,Kathi Roll Hub,9100000038,"Sipri Bazaar, Jhansi",Fast Food,4
+38,39,Cafe Mocha,9100000039,"Civil Lines, Bareilly",Cafe,5
+39,40,Awadhi Kitchen,9100000040,"Chowk, Lucknow",Awadhi,5
+40,41,The Sandwich Shop,9100000041,"Gomti Nagar, Lucknow",Fast Food,4
+41,42,Paratha Junction,9100000042,"Aminabad, Lucknow",North Indian,4
+42,43,Pasta & More,9100000043,"Sector 12, Noida",Italian,3
+43,44,Dumpling House,9100000044,"Sector 18, Noida",Chinese,5
+44,45,The Breakfast Club,9100000045,"Swaroop Nagar, Kanpur",Breakfast,4
+45,46,Kulfi Kingdom,9100000046,"Sadar, Agra",Dessert,5
+46,47,Royal Feast,9100000047,"Sigra, Varanasi",Indian,4
+47,48,Desi Tadka,9100000048,"Aliganj, Lucknow",Indian,5
+48,49,Urban Eats,9100000049,"Indirapuram, Ghaziabad",Fusion,4
+49,50,Food Fiesta,9100000050,"Sector 18, Noida",Multi-Cuisine,4
+50,1001,Spice Hub,9300001001,"Connaught Place, Delhi",Indian,5
+51,1002,  PIZZA POINT ,9300001002,"Park Street, Kolkata",Italian,4
+52,1003,Green Bowl,9300001003,"Sector 18, Noida",Healthy,4
+53,1004,Burger Barn,9300001004,"Malviya Nagar, Jaipur",Fast Food,3
+54,1005,Noodle House,9300001005,"Andheri, Mumbai",Chinese,5
