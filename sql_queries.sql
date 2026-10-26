@@ -1,5 +1,7 @@
 CREATE DATABASE food_delivery;
 
+
+
 USE food_delivery;
 
  -- 1. Customers
@@ -67,6 +69,22 @@ INSERT INTO Customers
 ('Bhavna Gupta','Female','9000000048','Gorakhpur, UP'),
 ('Kunal Singh','Male','9000000049','Varanasi, UP'),
 ('Jaya Srivastava','Female','9000000050','Lucknow, UP');
+
+
+INSERT INTO customers
+(customer_id, customer_name, gender, contact, Address, signup_date)
+VALUES
+(1001, 'Aarav Sharma', 'Male', '9200001001', '12, MG Road, Delhi', '2025-11-02 10:15:00'),
+(1002, 'PRIYA SINGH', 'FEMALE', '9200001002', '45 Park Street, Kolkata', '2025-11-10 11:20:00'),
+(1003, 'Rahul Verma', 'male', '9200001003', 'Sector 18, Noida', '2025-12-01 09:00:00'),
+(1004, 'Neha Gupta', 'Female', '9200001004', 'Flat 2B, Jaipur', '2025-12-15 17:40:00'),
+(1005, 'AMIT KUMAR', 'MALE', '9200001005', '7 Lake View, Bhopal', '2026-01-03 12:00:00'),
+(1006, 'Sara Khan', 'female', '9200001006', 'Andheri West, Mumbai', '2026-01-12 14:30:00'),
+(1007, 'Vikram Patel', 'Male', '9200001007', 'Ring Road, Surat', '2026-02-02 08:45:00'),
+(1008, 'ananya Das', 'Female', '9200001008', 'Salt Lake, Kolkata', '2026-02-20 19:05:00'),
+(1009, 'Mohit Jain', 'Male', '9200001009', 'Civil Lines, Kanpur', '2026-03-07 10:00:00'),
+(1010, 'Isha Mehta', 'female', '9200001010', 'Vashi, Navi Mumbai', '2026-03-21 16:25:00');
+
                                      
 create table if not exists Restaurants(Res_id int unsigned primary key auto_increment,
                                        Res_name varchar(50) not null,
@@ -127,6 +145,15 @@ INSERT INTO Restaurants
 ('Desi Tadka','9100000048','Aliganj, Lucknow','Indian',5),
 ('Urban Eats','9100000049','Indirapuram, Ghaziabad','Fusion',4),
 ('Food Fiesta','9100000050','Sector 18, Noida','Multi-Cuisine',4);
+
+INSERT INTO Restaurants
+(Res_id,Res_name, contact, address, cuisine, rating) VALUES
+(1001, 'Spice Hub', '9300000001', 'Connaught Place, Delhi', 'Indian', 5),
+(1002, 'PIZZA POINT', '9300000002', 'Park Street, Kolkata', 'Italian', 4),
+(1003, 'Green Bowl', '9300000003', 'Sector 18, Noida', 'Healthy', 4),
+(1004, 'Burger Barn', '9300000004', 'Malviya Nagar, Jaipur', 'Fast Food', 3),
+(1005, 'Noodle House', '9300000005', 'Andheri, Mumbai', 'Chinese', 5);
+
                                        
 create table if not exists Menu_item(item_id int unsigned primary key auto_increment,
                                      res_id int unsigned,
@@ -187,6 +214,22 @@ INSERT INTO Menu_item
 (48,'Dal Tadka',150,1),
 (49,'Veg Fried Rice',180,1),
 (50,'Special Combo Meal',299,1);
+
+
+INSERT INTO Menu_item
+(item_id,res_id, food_item, price, availability) VALUES
+
+(1001, 1001, 'Paneer Butter Masala', 240, 1),
+(1002, 1001, 'Garlic Naan', 45, 1),
+(1003, 1002, 'Margherita Pizza', 299, 1),
+(1004, 1002, 'Farmhouse PIZZA', 399, 1),
+(1005, 1003, 'Quinoa Salad', 220, 1),
+(1006, 1003, 'Fruit Bowl', 150, 1),
+(1007, 1004, 'Classic Burger', 180, 1),
+(1008, 1004, 'French Fries', 99, 1),
+(1009, 1005, 'Veg Hakka Noodles', 210, 1),
+(1010, 1005, 'Chilli Paneer', 260, 1);
+
                                      
 create table if not exists Orders(order_id int unsigned primary key auto_increment,
                                  customer_id int unsigned,
@@ -254,7 +297,57 @@ INSERT INTO `Orders`
 (50,50,50,1,10,269.10);
 
 
--- drop table Delivery;
+INSERT INTO orders
+(order_id, customer_id, item_id, Res_id, quantity, discount, total_price, order_datetime)
+VALUES
+(1001, 1001, 1001, 1001, 1, 0, 240, '2026-05-01 14:47:00'),
+(1002, 1001, 1002, 1001, 2, 5, 85, '2026-05-03 15:54:00'),
+(1003, 1001, 1001, 1001, 2, 20, 460, '2026-05-05 16:01:00'),
+(1004, 1001, 1003, 1002, 1, 0, 299, '2026-05-07 17:08:00'),
+(1005, 1001, 1001, 1001, 1, 10, 230, '2026-05-09 18:15:00'),
+(1006, 1002, 1003, 1002, 1, 0, 299, '2026-05-11 19:22:00'),
+(1007, 1002, 1004, 1002, 1, 20, 379, '2026-05-13 20:29:00'),
+(1008, 1002, 1003, 1002, 2, 15, 583, '2026-05-15 12:36:00'),
+(1009, 1002, 1005, 1003, 1, 0, 220, '2026-05-17 13:43:00'),
+(1010, 1002, 1003, 1002, 1, 0, 299, '2026-05-19 14:50:00'),
+(1011, 1003, 1007, 1004, 2, 10, 350, '2026-05-21 15:57:00'),
+(1012, 1003, 1008, 1004, 1, 0, 99, '2026-05-23 16:04:00'),
+(1013, 1003, 1007, 1004, 1, 0, 180, '2026-05-25 17:11:00'),
+(1014, 1003, 1010, 1005, 1, 5, 255, '2026-05-27 18:18:00'),
+(1015, 1003, 1007, 1004, 3, 20, 520, '2026-05-29 19:25:00'),
+(1016, 1004, 1005, 1003, 1, 0, 220, '2026-05-31 20:32:00'),
+(1017, 1004, 1006, 1003, 2, 10, 290, '2026-06-02 12:39:00'),
+(1018, 1004, 1005, 1003, 2, 15, 425, '2026-06-04 13:46:00'),
+(1019, 1004, 1009, 1005, 1, 0, 210, '2026-06-06 14:53:00'),
+(1020, 1004, 1005, 1003, 1, 0, 220, '2026-06-08 15:00:00'),
+(1021, 1005, 1009, 1005, 1, 0, 210, '2026-06-10 16:07:00'),
+(1022, 1005, 1010, 1005, 1, 10, 250, '2026-06-12 17:14:00'),
+(1023, 1005, 1009, 1005, 2, 20, 400, '2026-06-14 18:21:00'),
+(1024, 1005, 1001, 1001, 1, 0, 240, '2026-06-16 19:28:00'),
+(1025, 1005, 1009, 1005, 1, 0, 210, '2026-06-18 20:35:00'),
+(1026, 1006, 1006, 1003, 1, 0, 150, '2026-06-20 12:42:00'),
+(1027, 1006, 1005, 1003, 1, 10, 210, '2026-06-22 13:49:00'),
+(1028, 1006, 1006, 1003, 3, 15, 435, '2026-06-24 14:56:00'),
+(1029, 1006, 1003, 1002, 1, 0, 299, '2026-06-26 15:03:00'),
+(1030, 1006, 1006, 1003, 1, 0, 150, '2026-06-28 16:10:00'),
+(1031, 1007, 1002, 1001, 2, 5, 85, '2026-06-30 17:17:00'),
+(1032, 1007, 1001, 1001, 1, 0, 240, '2026-07-02 18:24:00'),
+(1033, 1007, 1002, 1001, 1, 0, 45, '2026-07-04 19:31:00'),
+(1034, 1007, 1007, 1004, 1, 10, 170, '2026-07-06 20:38:00'),
+(1035, 1007, 1002, 1001, 3, 15, 120, '2026-07-08 12:45:00'),
+(1036, 1008, 1004, 1002, 1, 0, 399, '2026-07-10 13:52:00'),
+(1037, 1008, 1003, 1002, 1, 0, 299, '2026-07-12 14:59:00'),
+(1038, 1008, 1004, 1002, 2, 30, 768, '2026-07-14 15:06:00'),
+(1039, 1009, 1008, 1004, 2, 0, 198, '2026-07-16 16:13:00'),
+(1040, 1009, 1007, 1004, 1, 0, 180, '2026-07-18 17:20:00'),
+(1041, 1009, 1008, 1004, 1, 5, 94, '2026-07-20 18:27:00'),
+(1042, 1010, 1010, 1005, 1, 0, 260, '2026-07-22 19:34:00'),
+(1043, 1010, 1009, 1005, 1, 0, 210, '2026-07-24 20:41:00'),
+(1044, 1010, 1010, 1005, 2, 20, 500, '2026-07-26 12:48:00');
+
+
+
+
 
 create table if not exists Delivery(delivery_id int unsigned primary key auto_increment,
                                     order_id int unsigned,
@@ -270,7 +363,8 @@ create table if not exists Delivery(delivery_id int unsigned primary key auto_in
                                     foreign key(item_id) references Menu_item(item_id),
                                     foreign key(Res_id) references Restaurants(Res_id)
                                     );
-                                    
+       
+            
 INSERT INTO Delivery
 (order_id, customer_id, item_id, Res_id,
  assigned_executive, contact_executive, status) VALUES
@@ -324,6 +418,67 @@ INSERT INTO Delivery
 (48,48,48,48,'Rohit Mishra','9200000048','Delivered'),
 (49,49,49,49,'Aman Singh','9200000049','Assigned'),
 (50,50,50,50,'Keshav Kumar','9200000050','Delivered');
+
+
+INSERT INTO delivery
+(
+    delivery_id,
+    order_id,
+    customer_id,
+    item_id,
+    Res_id,
+    assigned_executive,
+    contact_executive,
+    status,
+    delivery_time)
+VALUES
+(1001,1001,1001,1001,1001,'Rohan Delivery','9400000000','Delivered','2026-05-01 15:12:00'),
+(1002,1002,1001,1002,1001,'Asha Delivery','9400000001','delivered','2026-05-03 16:30:00'),
+(1003,1003,1001,1001,1001,'Karan Delivery','9400000002','DELIVERED','2026-05-05 16:48:00'),
+(1004,1004,1001,1003,1002,'Meena Delivery','9400000003','In Transit','2026-05-07 18:06:00'),
+(1005,1005,1001,1001,1001,'Rohan Delivery','9400000004','in transit','2026-05-09 19:24:00'),
+(1006,1006,1002,1003,1002,'Asha Delivery','9400000005','Delayed','2026-05-11 20:42:00'),
+(1007,1007,1002,1004,1002,'Karan Delivery','9400000006','Cancelled','2026-05-13 20:55:00'),
+(1008,1008,1002,1003,1002,'Meena Delivery','9400000007','Delivered','2026-05-15 13:13:00'),
+(1009,1009,1002,1005,1003,'Rohan Delivery','9400000008','Delivered','2026-05-17 14:31:00'),
+(1010,1010,1002,1003,1002,'Asha Delivery','9400000009','delivered','2026-05-19 15:49:00'),
+(1011,1011,1003,1007,1004,'Karan Delivery','9400000010','DELIVERED','2026-05-21 17:07:00'),
+(1012,1012,1003,1008,1004,'Meena Delivery','9400000011','In Transit','2026-05-23 17:25:00'),
+(1013,1013,1003,1007,1004,'Rohan Delivery','9400000012','in transit','2026-05-25 17:38:00'),
+(1014,1014,1003,1010,1005,'Asha Delivery','9400000013','Delayed','2026-05-27 18:56:00'),
+(1015,1015,1003,1007,1004,'Karan Delivery','9400000014','Cancelled','2026-05-29 20:14:00'),
+(1016,1016,1004,1005,1003,'Meena Delivery','9400000015','Delivered','2026-05-31 21:32:00'),
+(1017,1017,1004,1006,1003,'Rohan Delivery','9400000016','Delivered','2026-06-02 13:50:00'),
+(1018,1018,1004,1005,1003,'Asha Delivery','9400000017','delivered','2026-06-04 15:08:00'),
+(1019,1019,1004,1009,1005,'Karan Delivery','9400000018','DELIVERED','2026-06-06 15:21:00'),
+(1020,1020,1004,1005,1003,'Meena Delivery','9400000019','In Transit','2026-06-08 15:39:00'),
+(1021,1021,1005,1009,1005,'Rohan Delivery','9400000020','in transit','2026-06-10 16:57:00'),
+(1022,1022,1005,1010,1005,'Asha Delivery','9400000021','Delayed','2026-06-12 18:15:00'),
+(1023,1023,1005,1009,1005,'Karan Delivery','9400000022','Cancelled','2026-06-14 19:33:00'),
+(1024,1024,1005,1001,1001,'Meena Delivery','9400000023','Delivered','2026-06-16 20:51:00'),
+(1025,1025,1005,1009,1005,'Rohan Delivery','9400000024','Delivered','2026-06-18 21:04:00'),
+(1026,1026,1006,1006,1003,'Asha Delivery','9400000025','delivered','2026-06-20 13:22:00'),
+(1027,1027,1006,1005,1003,'Karan Delivery','9400000026','DELIVERED','2026-06-22 14:40:00'),
+(1028,1028,1006,1006,1003,'Meena Delivery','9400000027','In Transit','2026-06-24 15:58:00'),
+(1029,1029,1006,1003,1002,'Rohan Delivery','9400000028','in transit','2026-06-26 16:16:00'),
+(1030,1030,1006,1006,1003,'Asha Delivery','9400000029','Delayed','2026-06-28 17:34:00'),
+(1031,1031,1007,1002,1001,'Karan Delivery','9400000030','Cancelled','2026-06-30 17:47:00'),
+(1032,1032,1007,1001,1001,'Meena Delivery','9400000031','Delivered','2026-07-02 19:05:00'),
+(1033,1033,1007,1002,1001,'Rohan Delivery','9400000032','Delivered','2026-07-04 20:23:00'),
+(1034,1034,1007,1007,1004,'Asha Delivery','9400000033','delivered','2026-07-06 21:41:00'),
+(1035,1035,1007,1002,1001,'Karan Delivery','9400000034','DELIVERED','2026-07-08 13:59:00'),
+(1036,1036,1008,1004,1002,'Meena Delivery','9400000035','In Transit','2026-07-10 15:17:00'),
+(1037,1037,1008,1003,1002,'Rohan Delivery','9400000036','in transit','2026-07-12 15:30:00'),
+(1038,1038,1008,1004,1002,'Asha Delivery','9400000037','Delayed','2026-07-14 15:48:00'),
+(1039,1039,1009,1008,1004,'Karan Delivery','9400000038','Cancelled','2026-07-16 17:06:00'),
+(1040,1040,1009,1007,1004,'Meena Delivery','9400000039','Delivered','2026-07-18 18:24:00'),
+(1041,1041,1009,1008,1004,'Rohan Delivery','9400000040','Delivered','2026-07-20 19:42:00'),
+(1042,1042,1010,1010,1005,'Asha Delivery','9400000041','delivered','2026-07-22 21:00:00'),
+(1043,1043,1010,1009,1005,'Karan Delivery','9400000042','DELIVERED','2026-07-24 21:13:00'),
+(1044,1044,1010,1010,1005,'Meena Delivery','9400000043','In Transit','2026-07-26 13:31:00');
+
+DESCRIBE delivery;
+
                                     
 select count(*) from customers;
 select count(*) from Menu_item;
@@ -331,7 +486,6 @@ select count(*) from Restaurants;
 select count(*) from Orders;
 select count(*) from delivery;
 
-select * from delivery;
 
 
 
@@ -361,10 +515,15 @@ Delivery on delivery.order_id=Orders.order_id;
 -- SHOW global variables like 'local_infile';
 
 select * from customers;
+select * from restaurants;
+select * from Menu_item;
 select * from Orders;
 select * from delivery;
-select * from Menu_item;
-select * from restaurants;
+
+
+
+
+
 
 
 

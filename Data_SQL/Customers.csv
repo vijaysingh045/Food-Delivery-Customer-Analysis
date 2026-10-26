@@ -1,61 +1,61 @@
-,customer_id,customer_name,gender,contact,Address,signup_date
-0,1,Aarav Sharma,Male,9000000001,"Lucknow, UP",2026-10-13 13:34:06
-1,2,Priya Verma,Female,9000000002,"Kanpur, UP",2026-10-13 13:34:06
-2,3,Rahul Singh,Male,9000000003,"Varanasi, UP",2026-10-13 13:34:06
-3,4,Sneha Gupta,Female,9000000004,"Agra, UP",2026-10-13 13:34:06
-4,5,Arjun Kumar,Male,9000000005,"Prayagraj, UP",2026-10-13 13:34:06
-5,6,Ananya Mishra,Female,9000000006,"Gorakhpur, UP",2026-10-13 13:34:06
-6,7,Vikash Yadav,Male,9000000007,"Noida, UP",2026-10-13 13:34:06
-7,8,Pooja Pandey,Female,9000000008,"Ghaziabad, UP",2026-10-13 13:34:06
-8,9,Rohit Saxena,Male,9000000009,"Meerut, UP",2026-10-13 13:34:06
-9,10,Neha Agarwal,Female,9000000010,"Bareilly, UP",2026-10-13 13:34:06
-10,11,Amit Tiwari,Male,9000000011,"Lucknow, UP",2026-10-13 13:34:06
-11,12,Riya Joshi,Female,9000000012,"Kanpur, UP",2026-10-13 13:34:06
-12,13,Karan Malhotra,Male,9000000013,"Agra, UP",2026-10-13 13:34:06
-13,14,Simran Kaur,Female,9000000014,"Noida, UP",2026-10-13 13:34:06
-14,15,Deepak Chauhan,Male,9000000015,"Mathura, UP",2026-10-13 13:34:06
-15,16,Kavya Srivastava,Female,9000000016,"Ayodhya, UP",2026-10-13 13:34:06
-16,17,Mohit Jain,Male,9000000017,"Jhansi, UP",2026-10-13 13:34:06
-17,18,Isha Saxena,Female,9000000018,"Meerut, UP",2026-10-13 13:34:06
-18,19,Saurabh Patel,Male,9000000019,"Prayagraj, UP",2026-10-13 13:34:06
-19,20,Meera Das,Female,9000000020,"Gonda, UP",2026-10-13 13:34:06
-20,21,Nikhil Raj,Male,9000000021,"Lucknow, UP",2026-10-13 13:34:06
-21,22,Aditi Kapoor,Female,9000000022,"Noida, UP",2026-10-13 13:34:06
-22,23,Varun Thakur,Male,9000000023,"Kanpur, UP",2026-10-13 13:34:06
-23,24,Tanya Bansal,Female,9000000024,"Agra, UP",2026-10-13 13:34:06
-24,25,Manish Yadav,Male,9000000025,"Gorakhpur, UP",2026-10-13 13:34:06
-25,26,Shreya Roy,Female,9000000026,"Varanasi, UP",2026-10-13 13:34:06
-26,27,Akash Dubey,Male,9000000027,"Bareilly, UP",2026-10-13 13:34:06
-27,28,Nisha Rani,Female,9000000028,"Meerut, UP",2026-10-13 13:34:06
-28,29,Rajat Arora,Male,9000000029,"Ghaziabad, UP",2026-10-13 13:34:06
-29,30,Divya Tripathi,Female,9000000030,"Ayodhya, UP",2026-10-13 13:34:06
-30,31,Abhishek Pal,Male,9000000031,"Lucknow, UP",2026-10-13 13:34:06
-31,32,Sakshi Goyal,Female,9000000032,"Noida, UP",2026-10-13 13:34:06
-32,33,Pranav Sinha,Male,9000000033,"Kanpur, UP",2026-10-13 13:34:06
-33,34,Muskan Ali,Female,9000000034,"Agra, UP",2026-10-13 13:34:06
-34,35,Shivam Shukla,Male,9000000035,"Mathura, UP",2026-10-13 13:34:06
-35,36,Payal Nigam,Female,9000000036,"Jhansi, UP",2026-10-13 13:34:06
-36,37,Ramesh Maurya,Male,9000000037,"Gonda, UP",2026-10-13 13:34:06
-37,38,Komal Sharma,Female,9000000038,"Varanasi, UP",2026-10-13 13:34:06
-38,39,Yash Chawla,Male,9000000039,"Meerut, UP",2026-10-13 13:34:06
-39,40,Pallavi Singh,Female,9000000040,"Bareilly, UP",2026-10-13 13:34:06
-40,41,Harsh Vardhan,Male,9000000041,"Lucknow, UP",2026-10-13 13:34:06
-41,42,Tanvi Mehta,Female,9000000042,"Noida, UP",2026-10-13 13:34:06
-42,43,Gaurav Mishra,Male,9000000043,"Kanpur, UP",2026-10-13 13:34:06
-43,44,Ritika Anand,Female,9000000044,"Agra, UP",2026-10-13 13:34:06
-44,45,Ajay Kumar,Male,9000000045,"Prayagraj, UP",2026-10-13 13:34:06
-45,46,Sonia Verma,Female,9000000046,"Ghaziabad, UP",2026-10-13 13:34:06
-46,47,Tarun Pandey,Male,9000000047,"Ayodhya, UP",2026-10-13 13:34:06
-47,48,Bhavna Gupta,Female,9000000048,"Gorakhpur, UP",2026-10-13 13:34:06
-48,49,Kunal Singh,Male,9000000049,"Varanasi, UP",2026-10-13 13:34:06
-49,50,Jaya Srivastava,Female,9000000050,"Lucknow, UP",2026-10-13 13:34:06
-50,1001,Aarav Sharma,Male,9200001001,"12, MG Road, Delhi",2025-11-02 10:15:00
-51,1002,  PRIYA SINGH ,FEMALE,9200001002,"  45 Park Street, Kolkata ",2025-11-10 11:20:00
-52,1003,Rahul  Verma,male ,9200001003,"Sector 18, Noida",2025-12-01 09:00:00
-53,1004,Neha Gupta,Female,9200001004,"Flat 2B, Jaipur",2025-12-15 17:40:00
-54,1005,AMIT KUMAR,MALE,9200001005,"  7 Lake View, Bhopal",2026-01-03 12:00:00
-55,1006,Sara Khan,female,9200001006,"Andheri West, Mumbai",2026-01-12 14:30:00
-56,1007,Vikram Patel,Male,9200001007,"Ring Road, Surat",2026-02-02 08:45:00
-57,1008,  ananya Das,Female,9200001008,"Salt Lake, Kolkata",2026-02-20 19:05:00
-58,1009,Mohit Jain,Male,9200001009,"Civil Lines, Kanpur",2026-03-07 10:00:00
-59,1010,Isha Mehta,female,9200001010,"  Vashi, Navi Mumbai ",2026-03-21 16:25:00
+customer_id,customer_name,gender,contact,Address,signup_date
+1,Aarav Sharma,Male,9000000001,"Lucknow, UP",2026-10-26 23:27:51
+2,Priya Verma,Female,9000000002,"Kanpur, UP",2026-10-26 23:27:51
+3,Rahul Singh,Male,9000000003,"Varanasi, UP",2026-10-26 23:27:51
+4,Sneha Gupta,Female,9000000004,"Agra, UP",2026-10-26 23:27:51
+5,Arjun Kumar,Male,9000000005,"Prayagraj, UP",2026-10-26 23:27:51
+6,Ananya Mishra,Female,9000000006,"Gorakhpur, UP",2026-10-26 23:27:51
+7,Vikash Yadav,Male,9000000007,"Noida, UP",2026-10-26 23:27:51
+8,Pooja Pandey,Female,9000000008,"Ghaziabad, UP",2026-10-26 23:27:51
+9,Rohit Saxena,Male,9000000009,"Meerut, UP",2026-10-26 23:27:51
+10,Neha Agarwal,Female,9000000010,"Bareilly, UP",2026-10-26 23:27:51
+11,Amit Tiwari,Male,9000000011,"Lucknow, UP",2026-10-26 23:27:51
+12,Riya Joshi,Female,9000000012,"Kanpur, UP",2026-10-26 23:27:51
+13,Karan Malhotra,Male,9000000013,"Agra, UP",2026-10-26 23:27:51
+14,Simran Kaur,Female,9000000014,"Noida, UP",2026-10-26 23:27:51
+15,Deepak Chauhan,Male,9000000015,"Mathura, UP",2026-10-26 23:27:51
+16,Kavya Srivastava,Female,9000000016,"Ayodhya, UP",2026-10-26 23:27:51
+17,Mohit Jain,Male,9000000017,"Jhansi, UP",2026-10-26 23:27:51
+18,Isha Saxena,Female,9000000018,"Meerut, UP",2026-10-26 23:27:51
+19,Saurabh Patel,Male,9000000019,"Prayagraj, UP",2026-10-26 23:27:51
+20,Meera Das,Female,9000000020,"Gonda, UP",2026-10-26 23:27:51
+21,Nikhil Raj,Male,9000000021,"Lucknow, UP",2026-10-26 23:27:51
+22,Aditi Kapoor,Female,9000000022,"Noida, UP",2026-10-26 23:27:51
+23,Varun Thakur,Male,9000000023,"Kanpur, UP",2026-10-26 23:27:51
+24,Tanya Bansal,Female,9000000024,"Agra, UP",2026-10-26 23:27:51
+25,Manish Yadav,Male,9000000025,"Gorakhpur, UP",2026-10-26 23:27:51
+26,Shreya Roy,Female,9000000026,"Varanasi, UP",2026-10-26 23:27:51
+27,Akash Dubey,Male,9000000027,"Bareilly, UP",2026-10-26 23:27:51
+28,Nisha Rani,Female,9000000028,"Meerut, UP",2026-10-26 23:27:51
+29,Rajat Arora,Male,9000000029,"Ghaziabad, UP",2026-10-26 23:27:51
+30,Divya Tripathi,Female,9000000030,"Ayodhya, UP",2026-10-26 23:27:51
+31,Abhishek Pal,Male,9000000031,"Lucknow, UP",2026-10-26 23:27:51
+32,Sakshi Goyal,Female,9000000032,"Noida, UP",2026-10-26 23:27:51
+33,Pranav Sinha,Male,9000000033,"Kanpur, UP",2026-10-26 23:27:51
+34,Muskan Ali,Female,9000000034,"Agra, UP",2026-10-26 23:27:51
+35,Shivam Shukla,Male,9000000035,"Mathura, UP",2026-10-26 23:27:51
+36,Payal Nigam,Female,9000000036,"Jhansi, UP",2026-10-26 23:27:51
+37,Ramesh Maurya,Male,9000000037,"Gonda, UP",2026-10-26 23:27:51
+38,Komal Sharma,Female,9000000038,"Varanasi, UP",2026-10-26 23:27:51
+39,Yash Chawla,Male,9000000039,"Meerut, UP",2026-10-26 23:27:51
+40,Pallavi Singh,Female,9000000040,"Bareilly, UP",2026-10-26 23:27:51
+41,Harsh Vardhan,Male,9000000041,"Lucknow, UP",2026-10-26 23:27:51
+42,Tanvi Mehta,Female,9000000042,"Noida, UP",2026-10-26 23:27:51
+43,Gaurav Mishra,Male,9000000043,"Kanpur, UP",2026-10-26 23:27:51
+44,Ritika Anand,Female,9000000044,"Agra, UP",2026-10-26 23:27:51
+45,Ajay Kumar,Male,9000000045,"Prayagraj, UP",2026-10-26 23:27:51
+46,Sonia Verma,Female,9000000046,"Ghaziabad, UP",2026-10-26 23:27:51
+47,Tarun Pandey,Male,9000000047,"Ayodhya, UP",2026-10-26 23:27:51
+48,Bhavna Gupta,Female,9000000048,"Gorakhpur, UP",2026-10-26 23:27:51
+49,Kunal Singh,Male,9000000049,"Varanasi, UP",2026-10-26 23:27:51
+50,Jaya Srivastava,Female,9000000050,"Lucknow, UP",2026-10-26 23:27:51
+1001,Aarav Sharma,Male,9200001001,"12, MG Road, Delhi",2025-11-02 10:15:00
+1002,PRIYA SINGH,FEMALE,9200001002,"45 Park Street, Kolkata",2025-11-10 11:20:00
+1003,Rahul Verma,male,9200001003,"Sector 18, Noida",2025-12-01 09:00:00
+1004,Neha Gupta,Female,9200001004,"Flat 2B, Jaipur",2025-12-15 17:40:00
+1005,AMIT KUMAR,MALE,9200001005,"7 Lake View, Bhopal",2026-01-03 12:00:00
+1006,Sara Khan,female,9200001006,"Andheri West, Mumbai",2026-01-12 14:30:00
+1007,Vikram Patel,Male,9200001007,"Ring Road, Surat",2026-02-02 08:45:00
+1008,ananya Das,Female,9200001008,"Salt Lake, Kolkata",2026-02-20 19:05:00
+1009,Mohit Jain,Male,9200001009,"Civil Lines, Kanpur",2026-03-07 10:00:00
+1010,Isha Mehta,female,9200001010,"Vashi, Navi Mumbai",2026-03-21 16:25:00
