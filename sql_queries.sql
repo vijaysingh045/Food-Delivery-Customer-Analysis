@@ -520,16 +520,29 @@ select * from Menu_item;
 select * from Orders;
 select * from delivery;
 
+SELECT COUNT(*) AS total_rows
+FROM Delivery;
 
 
 
+SELECT
+    COUNT(*) AS total_rows,
+    MIN(delivery_id) AS first_id,
+    MAX(delivery_id) AS last_id
+FROM food_delivery.Delivery;
 
 
 
+SELECT COUNT(*) FROM food_delivery.Delivery;
 
 
+SELECT @@autocommit;
 
+USE food_delivery;
+COMMIT;
 
+SELECT COUNT(*) AS total_rows
+FROM food_delivery.Delivery;
 
 
 

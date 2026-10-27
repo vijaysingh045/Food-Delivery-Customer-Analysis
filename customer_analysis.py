@@ -27,10 +27,10 @@ def customer_analysis(customer_df,orders):
             # 'order_count':total_orders}
 
 
-customer_df=load_clean_data()['customers']
-order_df = load_clean_data()['orders']
-# print(order_df.columns)
-print(customer_analysis(customer_df,order_df))
+# customer_df=load_clean_data()['customers']
+# order_df = load_clean_data()['orders']
+# # print(order_df.columns)
+# print(customer_analysis(customer_df,order_df))
 
 
 
