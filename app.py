@@ -3,6 +3,7 @@ from cleaning_data import load_clean_data
 from customer_analysis import customer_analysis
 from orders_analysis import analyze_order,monthly_orders
 from delivery_analysis import analyze_delivery,delivery_status
+from connect_sql import connect_database
 import os
 
 st.set_page_config(page_title="Food Delivery Analysis",layout='wide')
@@ -23,7 +24,7 @@ except:
 CA,OA,DA=st.tabs(['Customer Analysis','Order Analysis','Delivery Analysis'])
 
 with CA:
-    st.header("Customer Analysis Report")
+    st.header("Customer Analysis Report 👨‍💼 ")
     st.divider()
     col1,col2,col3=st.columns(3)
     customer_analysis_data=customer_analysis(customer,orders)
@@ -45,7 +46,7 @@ with CA:
     st.bar_chart(customer_analysis_data['City_count'])   
 
 with OA:
-    st.header("Order Analysis Report")
+    st.header("Order Analysis Report 🛒 🛍️ ")
 
     orders_analysis_data=analyze_order(orders)
     st.divider()
@@ -66,4 +67,33 @@ with OA:
     st.line_chart(monthly_order_data)
     
 with DA:
-    st.header("Delivery Analysis Report")
+    st.header("Delivery Analysis Report 🚚")
+    st.divider()
+    d_m=analyze_delivery(orders,delivery )['delivery_minutes']
+    average_delivery_minutes=d_m.mean()
+    st.header("Average Delivery Time")
+    st.subheader(average_delivery_minutes)
+
+    # st.metric("Average Delivery Time",average_delivery_minutes)
+    st.divider()
+
+    st.header("Delivery Status")
+    status=delivery_status(delivery)
+    st.bar_chart(status)
+
+
+    st.divider()
+    st.subheader("Delivery Data Record")
+    st.dataframe(analyze_delivery(orders,delivery))
+
+
+
+st.sidebar.header("Food Delivery Database 🛢️")
+
+engine = connect_database()
+
+if engine is not None:
+    st.sidebar.subheader("Status: 🟢 Connected")
+else:
+    st.sidebar.subheader("Status: 🔴 Not Connected")
+

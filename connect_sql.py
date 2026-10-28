@@ -32,7 +32,6 @@
 
 
 
-
 import pandas as pd
 from sqlalchemy import create_engine
 
@@ -43,6 +42,7 @@ def connect_database():
             "mysql+mysqldb://root:vijay2005@localhost/food_delivery"
         )
         return engine
+
     except Exception as e:
         print("Connection failed:", e)
         return None
@@ -58,20 +58,23 @@ def connect_tables():
         customers = pd.read_sql_query(
             "SELECT * FROM customers;", engine
         )
+
         menu_item = pd.read_sql_query(
             "SELECT * FROM Menu_item;", engine
         )
+
         orders = pd.read_sql_query(
             "SELECT * FROM Orders;", engine
         )
+
         rest = pd.read_sql_query(
             "SELECT * FROM Restaurants;", engine
         )
+
         delivery = pd.read_sql_query(
-            "SELECT * FROM food_delivery.Delivery;", engine
+            "SELECT * FROM Delivery;", engine
         )
 
-        # Check which Delivery tables Python can see
         table_info = pd.read_sql_query("""
             SELECT
                 TABLE_SCHEMA,
@@ -84,19 +87,24 @@ def connect_tables():
         print("\n--- Delivery Tables Visible to Python ---")
         print(table_info.to_string(index=False))
 
-        # Check exact row count in the selected database
         count_info = pd.read_sql_query("""
             SELECT
                 DATABASE() AS database_name,
                 @@hostname AS server_name,
                 @@port AS server_port,
                 COUNT(*) AS delivery_rows
-            FROM food_delivery.Delivery;
+            FROM Delivery;
         """, engine)
 
         print("\n--- Connection Check ---")
         print(count_info.to_string(index=False))
-        print("\nDelivery DataFrame rows:", len(delivery))
+
+        print("\n--- DataFrame Row Counts ---")
+        print("Customers:", len(customers))
+        print("Menu Items:", len(menu_item))
+        print("Orders:", len(orders))
+        print("Restaurants:", len(rest))
+        print("Delivery:", len(delivery))
 
         return customers, menu_item, orders, rest, delivery
 
@@ -110,5 +118,3 @@ def connect_tables():
 
 if __name__ == "__main__":
     connect_tables()
-
-
